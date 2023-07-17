@@ -27,8 +27,13 @@ p {
 body {
     font-size: 18px;
     font-family: 'Barlow', sans-serif;
-    color: ;
+    color: black;
     background-color: white;
+
+}
+
+h1, h2, li, .cta {
+    font-family: "Barlow Condensed", sans-serif;
 
 }
 
