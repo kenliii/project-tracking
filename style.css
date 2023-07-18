@@ -27,7 +27,7 @@ p {
 body {
     font-size: 18px;
     font-family: 'Barlow', sans-serif;
-    color: black;
+    color: hsl(230, 29%, 20%);
     background-color: white;
 
 }
