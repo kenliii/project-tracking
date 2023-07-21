@@ -32,7 +32,9 @@ p {
 
 nav {
     position: absolute;
-    
+    top: -100vh;
+    width: 90%;
+    margin: auto;
     background-color: white;
     padding: 1.5rem;
     border-radius: 0.0625rem;
@@ -40,7 +42,28 @@ nav {
 }
 
 nav.open {
-    top: 2rem;
+    top: 6rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+nav ul li a {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+nav ul li:nth-child(4) {
+    display: none;
+}
+
+nav ul li:last-child {
+    border-top: 2px solid hsl(230, 11%, 40%);
 }
 
 body {
