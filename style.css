@@ -79,7 +79,7 @@ body {
     color: hsl(230, 29%, 20%);
     background-color: white;
     padding: 1.5rem;
-
+    overflow-x: hidden;
 }
 
 .showcase {
@@ -128,8 +128,16 @@ body {
     background-color: hsl(230, 29%, 20%);
     color: white;
     padding: 0.2 0.8rem;
-    border-radius: 30px;
+    border-radius: 20px;
     letter-spacing: 0;
+}
+
+.showcase p {
+    margin-bottom: 2rem;
+}
+
+.showcase article:last-child {
+    width: calc(125vw);
 }
 
 h1, h2, li, .cta {
@@ -154,4 +162,26 @@ h1, h2, li, .cta {
     right: 0;
     border-bottom-left-radius: 3rem;
     z-index: -1;
+}
+
+@media (min-width: 768px) {
+    .showcase {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .showcase h1 {
+        font-size: 4rem;
+    }
+
+    .showcase article:last-child {
+        position: absolute;
+       right: -16rem;
+    }
+
+    .showcase article:last-child img {
+        width: auto;
+    }
 }
