@@ -85,14 +85,42 @@ body {
 .showcase {
     display: flex;
     flex-direction: column-reverse;
+    padding: 4rem 0;
 }
 
 .showcase h2 {
     font-weight: 400;
     text-transform: uppercase;
     font-size: 1.4rem;
-    margin: 2rem 0 1rem;
+    margin: 6rem 0 1rem;
     letter-spacing: 0.3rem;
+    color: hsl(231, 7%, 65%);
+}
+
+.showcase h1 {
+    font-size: 3rem;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.showcase .cta button {
+    background-color: hsl(0, 100%, 68%);
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    font-family: "Barlow Condensed", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+
+}
+
+.showcase .cta span {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    margin-left: 1rem;
     color: hsl(231, 7%, 65%);
 }
 
@@ -115,4 +143,15 @@ h1, h2, li, .cta {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+.big {
+    height: calc(50vh - 10px);
+    background-color: hsl(207, 33%, 95%);
+    width: calc(50vw - 10px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 3rem;
+    z-index: -1;
 }
