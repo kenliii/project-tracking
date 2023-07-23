@@ -164,12 +164,13 @@ h1, h2, li, .cta {
     z-index: -1;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .showcase {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         max-width: 1200px;
         margin: auto;
+        padding: 0;
     }
 
     .showcase h1 {
@@ -178,8 +179,9 @@ h1, h2, li, .cta {
 
     .showcase article:last-child {
         position: absolute;
-       right: -16rem;
-    }
+        right:  -60rem;
+      }
+    
 
     .showcase article:last-child img {
         width: auto;
