@@ -193,4 +193,17 @@ h1, h2, li, .cta {
     .showcase article:last-child img {
         width: auto;
     }
+
+    nav {
+        position: relative;
+        top: 0;
+        background-color: transparent;
+        padding: 0;
+        width: auto;
+        border-radius: 0;
+        box-shadow: none;
+        transition: none;
+    }
+
+    
 }
